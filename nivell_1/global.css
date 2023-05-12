@@ -46,28 +46,13 @@ img{
   object-fit: cover;
 }
 /* WEB */
-.contenedor{
+#app{
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: .5fr 1fr .2fr;
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  background-color: #333;
+  color: snow;
 }
-/* Menu */
-.menu{
-  display: flex;
-  justify-content: center;
-}
-/* CABECERA */
-.cabecera{
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr .5fr;
-  background-color: #223;
-}
-/* Logo */
-.logo {
-  width: 64px;
-}
-/* Menu */
