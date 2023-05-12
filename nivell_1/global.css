@@ -1,6 +1,8 @@
 @import url("./root.css");
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -9,50 +11,91 @@
   color: transparent;
 }
 
-html, body {
+html,
+body {
   font-size: var(--font-size);
   font-family: var(--font-family);
 }
-h1, h2, h3, h4, h5, h6{
-  padding: 0;
+body {
+  background: var(--color-primario);
+  color: var(--color-secundario);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: .5rem 1rem;
   margin: 0;
 }
-h1{
-  font-size: 1.8em;
+
+h1 {
+  font-size: 1.5em;
 }
-h2{
-  font-size: 1.4em;
+
+h2 {
+  font-size: 1.1em;
 }
-h3{
+
+h3 {
   font-size: 1.2em;
+  background-color: var(--color-cuatro);
+  flex: 1;
 }
-ul{
+p{
+  background-color: var(--color-primario);
+  flex: 1;
+  padding: 1rem;
+  font-size: .9em;
+}
+ul {
   list-style: none;
+  font-size: .8em;
 }
-a{
+
+a {
   text-decoration: none;
+  padding: .5rem 1rem;
+  font-size: 1em;
+  font-weight: 600;
 }
-a:hover,a:active{
+
+a:hover,
+a:active {
   color: red
 }
-a:focus{
+
+a:focus {
   color: green
 }
-a:target{
+
+a:target {
   color: blue
 }
-img{
+
+img {
   width: 100%;
   object-fit: cover;
 }
-/* WEB */
-#app{
+span{
+  padding: .5rem;
+  color: var(--color-secundario);
+  padding: .25rem;
+}
+/* APP */
+#app {
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: .5fr 1fr .2fr;
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
-  background-color: #333;
   color: snow;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
