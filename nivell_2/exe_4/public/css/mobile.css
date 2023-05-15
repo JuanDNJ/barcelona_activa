@@ -1,9 +1,8 @@
 /* INICIO */
-
+@import url("./menu.css");
 :is(img.svg__ico, img.png__logo) {
-  object-fit: cover;
   max-width: 64px;
-  max-width: 64px;
+  max-width: 32px;
 }
 
 i.icono {
@@ -14,13 +13,10 @@ i.icono {
   align-items: center;
   overflow: hidden;
 }
-
 .cabecera__principal {
-  background: var(--color-secundario);
   display: grid;
   grid-auto-flow: row;
   gap: .5rem;
-  padding: 1rem;
 }
 
 .pie__principal {
@@ -29,9 +25,7 @@ i.icono {
 
 /* CABECERA PRINCIPAL */
 .cabecera__principal>.item:nth-child(1) {
-  background: var(--color-uno);
   display: grid;
-  padding: 1rem;
   grid-auto-flow: row;
   justify-content: stretch;
   gap: 1rem;
@@ -39,28 +33,39 @@ i.icono {
 
 /* Primer hijo de la cabecera */
 .cabecera__principal>.item:nth-child(2) {
-  background: var(--color-tres);
   flex-direction: column;
   padding: 1rem;
 }
-
+/* TODDO: SEGUIR POR AQUI CON LA IMAGEN DEL BANNER */
 /* Segundo hijo de la cabecera */
 .logo,
 .menu,
 .red-social,
 .banner {
-  background: var(--color-dos);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  margin: -1rem;
+  z-index: 10;
 }
-
+.contenedor-imagen__banner{
+  overflow: hidden;
+  position: absolute;
+}
+img.jpg__header{
+ 
+  max-width: 375px;
+  z-index: 0;
+}
 /* BAnner */
 .banner {
-  background: var(--color-cuatro-a);
   color: #333;
 }
-
+.descripcion__banner{
+  font-size: 2rem;
+  z-index: 1;
+}
 /* CONTENIDO PRINCIPAL */
 .contenido__principal {
   background: var(--color-cuatro-a);
