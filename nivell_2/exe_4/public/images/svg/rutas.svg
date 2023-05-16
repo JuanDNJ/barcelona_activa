@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666663 8.4666665"
+   version="1.1"
+   id="svg11146"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="rutas.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11148"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showborder="true"
+     inkscape:zoom="17.678304"
+     inkscape:cx="15.555791"
+     inkscape:cy="12.953731"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs11143" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#000000;stroke-width:0"
+       id="path11206"
+       cx="4.1831522"
+       cy="2.5817308"
+       r="2.2823999" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0"
+       id="path11208"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="2.1102843"
+       sodipodi:cy="3.9212377"
+       sodipodi:r1="2.3499398"
+       sodipodi:r2="1.17497"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 2.1102844,6.2711775 1.0927304,4.5087227 0.07517671,2.7462679 l 2.03510769,-2e-7 2.0351075,0 -1.0175537,1.762455 z"
+       inkscape:transform-center-y="0.58748502"
+       transform="translate(2.0803512,0.68846156)" />
+    <circle
+       style="fill:#f9f9f9;stroke-width:0"
+       id="path11314"
+       cx="4.1981177"
+       cy="2.6415975"
+       r="1.8783028" />
+    <rect
+       style="fill:#000000;stroke-width:0"
+       id="rect11368"
+       width="4.7743316"
+       height="0.43403012"
+       x="1.7660536"
+       y="7.4982448"
+       ry="0.02201681" />
+  </g>
+</svg>
