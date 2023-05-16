@@ -19,7 +19,6 @@ i.icono {
   display: grid;
   grid-auto-flow: row;
   gap: .5rem;
-  background: rgb(244, 242, 242);
 }
 
 .pie__principal {
@@ -32,12 +31,13 @@ i.icono {
   grid-auto-flow: row;
   justify-content: stretch;
   gap: 1rem;
+  z-index: 11;
 }
 
 /* Primer hijo de la cabecera */
 .cabecera__principal>.item:nth-child(2) {
   flex-direction: column;
-  padding: 1rem;
+  padding: .25rem 0;
 }
 
 /* TODDO: SEGUIR POR AQUI CON LA IMAGEN DEL BANNER */
@@ -51,16 +51,12 @@ i.icono {
   align-items: center;
   overflow: hidden;
   margin: -1rem;
-  z-index: 10;
-  position: relative;
 }
 
-span.descripcion__banner {
+div.contenedor-imagen__banner {
   position: absolute;
-  transform: translate(0, 100%);
- 
-  font-size: 1.4rem;
-  text-align: center;
+  z-index: 10; 
+  overflow: hidden;
 }
 
 img.jpg__header {
@@ -125,4 +121,13 @@ img.jpg__header {
 
 .pie__principal address {
   background: var(--color-cuatro-a);
+}
+
+@media screen and (max-width: 768px) {
+  .cabecera__principal {
+    background: url('../images/jpg/miniaturas/header375x250.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+  }
 }

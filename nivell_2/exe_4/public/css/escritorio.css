@@ -1,5 +1,13 @@
 @media screen and (min-width: 1024px) {
  /* CABECERA PRINCIPAL */
+ .cabecera__principal {
+  
+  background: url('../images/jpg/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
   .cabecera__principal>.item:nth-child(1) {
     display: grid;
     padding: 1rem;

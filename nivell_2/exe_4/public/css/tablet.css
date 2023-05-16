@@ -6,7 +6,12 @@
     gap: .5rem;
     padding: 1rem;
     grid-template-rows: auto 1fr;
+    background: url('../images/jpg/miniaturas/header768x415.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
   }
+
   .pie__principal {
     background: var(--color-secundario);
   }
@@ -23,7 +28,7 @@
 
   /* Primer hijo de la cabecera */
   .cabecera__principal>.item:nth-child(2) {
-  
+
     flex-direction: column;
     padding: 1rem;
   }
@@ -37,6 +42,7 @@
     padding: 1rem;
     gap: 1rem;
   }
+
   .contenido {
     display: grid;
 
@@ -60,14 +66,14 @@
   }
 
   .barra__dinamica .informacion__web {
-   
+
     flex-direction: column;
     align-items: stretch;
   }
 
   /* PIE PRINCIPAL */
   .pie__principal {
-  
+
     padding: 1rem;
   }
 
