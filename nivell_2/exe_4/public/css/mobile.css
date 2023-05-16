@@ -1,8 +1,9 @@
 /* INICIO */
 @import url("./menu.css");
+
 :is(img.svg__ico, img.png__logo) {
   max-width: 64px;
-  max-width: 32px;
+  max-width: 64px;
 }
 
 i.icono {
@@ -13,10 +14,12 @@ i.icono {
   align-items: center;
   overflow: hidden;
 }
+
 .cabecera__principal {
   display: grid;
   grid-auto-flow: row;
   gap: .5rem;
+  background: rgb(244, 242, 242);
 }
 
 .pie__principal {
@@ -36,6 +39,7 @@ i.icono {
   flex-direction: column;
   padding: 1rem;
 }
+
 /* TODDO: SEGUIR POR AQUI CON LA IMAGEN DEL BANNER */
 /* Segundo hijo de la cabecera */
 .logo,
@@ -48,33 +52,39 @@ i.icono {
   overflow: hidden;
   margin: -1rem;
   z-index: 10;
+  position: relative;
 }
-.contenedor-imagen__banner{
-  overflow: hidden;
+
+span.descripcion__banner {
   position: absolute;
-}
-img.jpg__header{
+  transform: translate(0, 100%);
  
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+img.jpg__header {
   max-width: 375px;
   z-index: 0;
 }
+
 /* BAnner */
 .banner {
   color: #333;
 }
-.descripcion__banner{
+
+.descripcion__banner {
   font-size: 2rem;
   z-index: 1;
 }
+
 /* CONTENIDO PRINCIPAL */
 .contenido__principal {
-  background: var(--color-cuatro-a);
   display: grid;
   grid-auto-flow: row;
   padding: 1rem;
   gap: 1rem;
 }
-
 .contenido {
   display: grid;
   grid-auto-flow: row;
@@ -83,7 +93,6 @@ img.jpg__header{
   gap: 1rem;
   padding: 1rem;
 }
-
 .contenido>.item {
   background: var(--color-cinco);
   grid-column: span 2;
