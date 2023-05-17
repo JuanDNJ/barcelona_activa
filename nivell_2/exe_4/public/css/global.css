@@ -91,9 +91,11 @@ span{
   margin: 0 auto;
   overflow-x: hidden;
   color: snow;
+  position: relative;
 }
 
 .item {
   display: flex;
 
 }
+

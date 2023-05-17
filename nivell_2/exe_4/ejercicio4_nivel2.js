@@ -1,13 +1,13 @@
 const $ = (tag, all = false) => {
-  let ragRef = tag;
+  // let ragRef = tag;
 
-  if (tag.charAt(0) === '.') {
-    ragRef = tag.slice(0, 1);
-    console.log(ragRef.slice(0, 1))
-  } else if (tag.charAt(0) === '#') {
-    ragRef = tag.slice(0, 1);
-    console.log(ragRef.slice(0, 1))
-  }
+  // if (tag.charAt(0) === '.') {
+  //   ragRef = tag.slice(0, 1);
+  //   console.log(ragRef.slice(0, 1))
+  // } else if (tag.charAt(0) === '#') {
+  //   ragRef = tag.slice(0, 1);
+  //   console.log(ragRef.slice(0, 1))
+  // }
   if (all === true) {
     return Array.from(document.querySelectorAll(tag))
   } else {
@@ -15,8 +15,15 @@ const $ = (tag, all = false) => {
   }
 
 }
+const modalMenuMobile = document.createElement('template');
+modalMenuMobile.id= 'modal__menu;'
+modalMenuMobile.innerHTML =  /*html*/ `
+
+ 
+`
 
 const templateMenu = document.createElement('template');
+templateMenu.id= 'menu-principal;'
 templateMenu.innerHTML = /*html*/ `
  <nav class="menu">
   <i class="icono__menu-bar"><img src="./public/images/svg/menu_bars.svg" alt="Menu bar"></i>
@@ -56,7 +63,21 @@ templateMenu.innerHTML = /*html*/ `
 
 `;
 
-
+let app = $("#app");
+app.appendChild(modalMenuMobile.content.cloneNode((true)));
 let cabecera = $(".item:nth-child(1)");
 console.log(cabecera)
-cabecera.appendChild(templateMenu.content.cloneNode((true)))
+cabecera.appendChild(templateMenu.content.cloneNode((true)));
+
+let menuBars = $(".icono__menu-bar");
+menuBars.addEventListener("click", (event) => {
+
+  const app = $("#app")
+// TODDO: Seguir creando el menu mobile con template
+  app.appendChild(modalMenuMobile.content.cloneNode((true)))
+  const ulMenu = $(".list__menu");
+  console.log(ulMenu)
+  // console.log(templateMenu.querySelector(".list__menu"))
+  app.appendChild(templateMenu)
+  modalMenuMobile.appendChild(ulMenu)
+})
