@@ -52,12 +52,7 @@ i.icono {
   overflow: hidden;
   margin: -1rem;
 }
-.logo{
-  order: 0;
-}
-.red-social{
-  order: 2;
-}
+
 .banner {
   height: 250px;
   align-items: end;
