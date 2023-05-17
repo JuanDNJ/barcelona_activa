@@ -1,5 +1,27 @@
-@media screen and (max-width: 426px) {
+@media screen and (max-device-width: 425px) and (max-device-height: 715px) and (orientation:portrait){
+  ul.list__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 425px)  and (orientation:landscape){
   ul.list__menu{
     display: none;
   }
 }
+/* @media screen and (min-width: 768px)  and (orientation:landscape){
+  ul.list__menu{
+    display: flex;
+  }
+} */
+/* @media screen and (min-width: 1024px) and (orientation:portrait){
+  ul.list__menu{
+    display: flex;
+  }
+} */
+/* 
+
+@media (min-height: 667px) { 
+  ul.list__menu {
+    display: none;
+  }
+} */
