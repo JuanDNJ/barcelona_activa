@@ -80,4 +80,8 @@
   .pie__principal address {
     background: var(--color-cuatro-a);
   }
+  i.icono__menu-bar{
+    display: none;
+   
+  }
 }
