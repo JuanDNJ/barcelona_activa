@@ -3,21 +3,28 @@
     display: none;
   }
 }
-@media screen and (min-width: 425px)  and (orientation:landscape){
+@media screen and (min-width: 425px) and (max-device-height: 1080px){
   ul.list__menu{
-    display: none;
+    display: flex;
   }
 }
+@media screen and (max-width: 768px) and (max-device-height: 1080px){
+  ul.list__menu{
+ 
+    background-color: red;
+  }
+}
+/* @media screen and (min-width: 1024px) and (max-device-height: 1080px){
+  ul.list__menu{
+    display: flex;
+  }
+} */
 /* @media screen and (min-width: 768px)  and (orientation:landscape){
   ul.list__menu{
     display: flex;
   }
 } */
-/* @media screen and (min-width: 1024px) and (orientation:portrait){
-  ul.list__menu{
-    display: flex;
-  }
-} */
+/*  */
 /* 
 
 @media (min-height: 667px) { 
