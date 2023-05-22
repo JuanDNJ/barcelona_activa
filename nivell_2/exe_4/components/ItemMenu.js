@@ -12,7 +12,9 @@ export default class ItemMenu extends HTMLElement {
         display: block;
       }
       li.item{
-        
+          display: flex;
+          align-items: center;
+          gap: 1rem;
       }
     `
   }

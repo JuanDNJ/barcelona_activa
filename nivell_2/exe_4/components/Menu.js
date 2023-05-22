@@ -5,6 +5,7 @@ export default class MenuNjv extends HTMLElement {
 
   constructor() {
     super();
+    this.attachShadow({mode: 'open'})
   }
 
   static get styles() {
@@ -49,7 +50,7 @@ export default class MenuNjv extends HTMLElement {
 
   render() {
 
-    this.innerHTML = /*html*/ `
+    this.shadowRoot.innerHTML = /*html*/ `
       <style>${MenuNjv.styles}</style>
       <nav class="menu">
         <icono-menu></icono-menu>
@@ -90,15 +91,15 @@ export default class MenuNjv extends HTMLElement {
   }
 
   disconnectedCallback() {
-    this.innerHTML = /* html */ "";
+    this.shadowRoot.innerHTML = /* html */ "";
   }
 
-  attributeChangedCallback(attr, old, now) { }
+  // attributeChangedCallback(attr, old, now) { }
 
 
-  static get observedAttributes() {
-    return [''];
-  }
+  // static get observedAttributes() {
+  //   return [''];
+  // }
 }
 
 window.customElements.define("menu-njv", MenuNjv);
