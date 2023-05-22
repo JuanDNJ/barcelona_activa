@@ -13,7 +13,7 @@ export default class EnlaceRollOver extends HTMLElement {
       }
       a.link {
         text-decoration: none;
-        padding: .5rem 1rem;
+        padding: .5rem .5rem .5rem 0rem;
         font-size: 1em;
         font-weight: 600;
         color: red

@@ -11,12 +11,18 @@ export default class ItemMenu extends HTMLElement {
       :host{
         display: block;
       }
+      li.item{
+        
+      }
     `
   }
   ready() {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${ItemMenu.styles}</style>
-        <h1>ItemMenu</h1>
+        <li class="item">
+          <slot name="icono"></slot>
+          <slot name="enlace"></slot>
+        </li>
       `
   }
   disconnectedCallback() {

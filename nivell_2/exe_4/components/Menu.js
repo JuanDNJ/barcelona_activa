@@ -1,5 +1,6 @@
 import './IconoMenu.js'
 import './Enlace.js'
+import './ItemMenu.js'
 export default class MenuNjv extends HTMLElement {
 
   constructor() {
@@ -7,7 +8,7 @@ export default class MenuNjv extends HTMLElement {
   }
 
   static get styles() {
-  return /*html*/ `
+    return /*html*/ `
     :host {
       display: block;
     }
@@ -22,13 +23,13 @@ export default class MenuNjv extends HTMLElement {
       order: 1;
     }
     @media screen and (min-width: 425px) {
-      ul.list__menu{
+      ul.lista{
         display: none;
       }
      
     }
     @media screen and (min-width: 768px) {
-      ul.list__menu{
+      ul.lista{
         display: inline-flex;
       }
      
@@ -52,37 +53,37 @@ export default class MenuNjv extends HTMLElement {
       <style>${MenuNjv.styles}</style>
       <nav class="menu">
         <icono-menu></icono-menu>
-        <ul class="list__menu">
-          <li class="item__list">
-            <i class="icono icono__home">
+        <ul class="lista">
+          <item-menu>
+            <i class="icono" slot="icono">
               <img class="svg__ico" src="./public/images/svg/home.svg" alt="Inicio">
             </i>
-            <a-roll-over content="Inicio"></a-roll-over>
-          </li>
-          <li class="item__list">
-            <i class="icono icono__home">
+            <a-roll-over slot="enlace" content="Inicio"></a-roll-over>
+          </item-menu>
+          <item-menu>
+            <i class="icono" slot="icono">
               <img class="svg__ico" src="./public/images/svg/rutas.svg" alt="Rutas">
             </i>
-            <a-roll-over content="Rutas"></a-roll-over>
-          </li>
-          <li class="item__list">
-            <i class="icono icono__home">
+            <a-roll-over slot="enlace" content="Rutas"></a-roll-over>
+          </item-menu>
+          <item-menu>
+             <i class="icono" slot="icono">
               <img class="svg__ico" src="./public/images/svg/hoteles.svg" alt="Hoteles">
             </i>
-            <a-roll-over content="Hoteles"></a-roll-over>
-          </li>
-          <li class="item__list">
-            <i class="icono icono__home">
+            <a-roll-over slot="enlace"  content="Hoteles"></a-roll-over>
+          </item-menu>
+          <item-menu>
+            <i class="icono" slot="icono">
               <img class="svg__ico" src="./public/images/svg/vuelos.svg" alt="Vuelos">
             </i>
-            <a-roll-over content="Vuelos"></a-roll-over>
-          </li>
-          <li class="item__list">
-            <i class="icono icono__home">
+            <a-roll-over slot="enlace"  content="Vuelos"></a-roll-over>
+          </item-menu>
+          <item-menu>
+            <i class="icono" slot="icono">
               <img class="svg__ico" src="./public/images/svg/contacto.svg" alt="Contacto">
             </i>
-            <a-roll-over content="Contacto"></a-roll-over>
-          </li>
+            <a-roll-over slot="enlace"  content="Contacto"></a-roll-over>
+          </item-menu>
         </ul>
       </nav>
     `;
