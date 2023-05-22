@@ -27,9 +27,7 @@ article.red-social {
   i.icono__menu-bar{
     display: none;
   }
-  .logo{
-    order: -1;
-  }
+
   .menu{
     order: -1;
   }

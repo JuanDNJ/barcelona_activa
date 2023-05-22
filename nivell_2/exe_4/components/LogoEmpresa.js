@@ -11,6 +11,22 @@ export default class LogoEmpresa extends HTMLElement {
       :host{
         display: block;
       }
+      img.png__logo {
+        max-width: 64px;
+        max-width: 64px;
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: -1rem;
+      }
+      @media screen and (min-width: 768px) {
+        .logo{
+          order: -1;
+        }
+      }
     `
   }
   ready() {

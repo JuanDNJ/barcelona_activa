@@ -16,7 +16,6 @@ export default class MenuNjv extends HTMLElement {
     ul.list__menu {
       display: none;
     }
-  
     .menu{
       order: 2;
     }
@@ -27,15 +26,10 @@ export default class MenuNjv extends HTMLElement {
       ul.lista{
         display: none;
       }
-     
     }
     @media screen and (min-width: 768px) {
       ul.lista{
         display: inline-flex;
-      }
-     
-      .logo{
-        order: -1;
       }
       .menu{
         order: -1;
