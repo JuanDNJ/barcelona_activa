@@ -1,5 +1,4 @@
 /* INICIO */
-@import url("./menu.css");
 
 :is(img.svg__ico, img.png__logo) {
   max-width: 64px;
