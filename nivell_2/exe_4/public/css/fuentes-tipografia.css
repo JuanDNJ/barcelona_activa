@@ -1,0 +1,37 @@
+/* @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    local("Open Sans"),
+    url("/fonts/OpenSans.woff2") format("woff2"),
+    url("/fonts/OpenSans.woff") format("woff"),
+    url("/fonts/OpenSans.ttf") format("truetype"),
+    url("/fonts/OpenSans.otf") format("opentype"),
+} */
+
+@font-face {
+  font-family: 'cuneiform';
+  src: url('../fonts/cunReg.eot');
+  src: local('cuneiform'), local('cunReg'),
+      url('../fonts/cun-reg/cunReg.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cun-reg/cunReg.woff2') format('woff2'),
+      url('../fonts/cun-reg/cunReg.woff') format('woff'),
+      url('../fonts/cun-reg/cunReg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hiroshio';
+  src: url('../fonts/hiroshio/Hiroshio.eot');
+  src: local('Hiroshio'),
+      url('../fonts/hiroshio/Hiroshio.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hiroshio/Hiroshio.woff2') format('woff2'),
+      url('../fonts/hiroshio/Hiroshio.woff') format('woff'),
+      url('../fonts/hiroshio/Hiroshio.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
