@@ -12,6 +12,7 @@ export default class MenuNjv extends HTMLElement {
     return /*html*/ `
     :host {
       display: block;
+     
     }
     ul.list__menu {
       display: none;
@@ -30,6 +31,9 @@ export default class MenuNjv extends HTMLElement {
     @media screen and (min-width: 768px) {
       ul.lista{
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
       }
       .menu{
         order: -1;
@@ -51,31 +55,31 @@ export default class MenuNjv extends HTMLElement {
         <ul class="lista">
           <item-menu>
             <i class="icono" slot="icono">
-              <img class="svg__ico" src="./public/images/svg/home.svg" alt="Inicio">
+              <img class="svg__ico" src="./images/svg/home.svg" alt="Inicio">
             </i>
             <a-roll-over slot="enlace" content="Inicio"></a-roll-over>
           </item-menu>
           <item-menu>
             <i class="icono" slot="icono">
-              <img class="svg__ico" src="./public/images/svg/rutas.svg" alt="Rutas">
+              <img class="svg__ico" src="./images/svg/rutas.svg" alt="Rutas">
             </i>
             <a-roll-over slot="enlace" content="Rutas"></a-roll-over>
           </item-menu>
           <item-menu>
              <i class="icono" slot="icono">
-              <img class="svg__ico" src="./public/images/svg/hoteles.svg" alt="Hoteles">
+              <img class="svg__ico" src="./images/svg/hoteles.svg" alt="Hoteles">
             </i>
             <a-roll-over slot="enlace"  content="Hoteles"></a-roll-over>
           </item-menu>
           <item-menu>
             <i class="icono" slot="icono">
-              <img class="svg__ico" src="./public/images/svg/vuelos.svg" alt="Vuelos">
+              <img class="svg__ico" src="./images/svg/vuelos.svg" alt="Vuelos">
             </i>
             <a-roll-over slot="enlace"  content="Vuelos"></a-roll-over>
           </item-menu>
           <item-menu>
             <i class="icono" slot="icono">
-              <img class="svg__ico" src="./public/images/svg/contacto.svg" alt="Contacto">
+              <img class="svg__ico" src="./images/svg/contacto.svg" alt="Contacto">
             </i>
             <a-roll-over slot="enlace"  content="Contacto"></a-roll-over>
           </item-menu>

@@ -33,7 +33,7 @@ export default class LogoEmpresa extends HTMLElement {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${LogoEmpresa.styles}</style>
         <article class="logo">
-          <img class="png__logo" src="./public/images/jpg/logo.png" alt="Logo Empresa">
+          <img class="png__logo" src="./images/jpg/logo.png" alt="Logo Empresa">
         </article>
       `
   }

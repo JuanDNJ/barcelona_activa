@@ -1,4 +1,4 @@
-export default class BannerPrincipal extends HTMLElement {
+export default class BannerNjv extends HTMLElement {
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
@@ -12,26 +12,29 @@ export default class BannerPrincipal extends HTMLElement {
         display: block;
       }
       .banner {
+        position: relative;
+        bottom: 25px;
         display: flex;
+        align-items: end;
         justify-content: center;
         overflow: hidden;
         margin: -1rem;
         height: 250px;
-        align-items: end;
         order: 1;
       }
-      span {
+      span.descripcion{
         font-family: var(--font-family-titulos);
         font-size: 1.5rem; 
-        color: rgb(77, 74, 74);
+        color: rgba(255, 74, 74, 1);
+        padding: 0 1rem 1rem 1rem;
       }
     `
   }
   ready() {
     this.shadowRoot.innerHTML = /*html*/ `
-        <style>${BannerPrincipal.styles}</style>
+        <style>${BannerNjv.styles}</style>
         <article class="banner">
-         <span class="descripcion__banner">"Disfruta de la experiencia de otros viajeros"</span>
+         <span class="descripcion">"Disfruta de la experiencia de otros viajeros"</span>
         </article>
       `
   }
@@ -46,4 +49,4 @@ export default class BannerPrincipal extends HTMLElement {
     return [''];
   }
 }
-window.customElements.define("banner-principal",BannerPrincipal);
+window.customElements.define("banner-njv", BannerNjv);

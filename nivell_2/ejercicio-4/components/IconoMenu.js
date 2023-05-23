@@ -36,7 +36,7 @@ export default class IconoMenu extends HTMLElement {
       this.shadowRoot.innerHTML = /*html*/ `
       <style>${IconoMenu.styles}</style>
       <i class="icono__menu-bar">
-         <img src="./public/images/svg/menu_bars.svg" alt="Menu bar">
+         <img src="./images/svg/menu_bars.svg" alt="Menu bar">
       </i>
     `;
 

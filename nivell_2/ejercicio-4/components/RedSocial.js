@@ -18,10 +18,10 @@ export default class RedSocial  extends HTMLElement {
         <style>${RedSocial.styles}</style>
         <article class="red-social">
           <i class="icono icono__home">
-            <img class="svg__ico" src="./public/images/svg/facebook.svg" alt="Facebook">
+            <img class="svg__ico" src="./images/svg/facebook.svg" alt="Facebook">
           </i>
           <i class="icono icono__home">
-            <img class="svg__ico" src="./public/images/svg/twitter.svg" alt="Twitter">
+            <img class="svg__ico" src="./images/svg/twitter.svg" alt="Twitter">
           </i>
         </article>
       `

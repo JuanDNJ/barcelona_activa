@@ -43,8 +43,7 @@ i.icono {
 /* Segundo hijo de la cabecera */
 
 .menu,
-.red-social,
-.banner {
+.red-social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,11 +51,7 @@ i.icono {
   margin: -1rem;
 }
 
-.banner {
-  height: 250px;
-  align-items: end;
-  order: 1;
-}
+
 div.contenedor-imagen__banner {
   position: absolute;
   z-index: 10; 
