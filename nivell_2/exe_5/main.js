@@ -9,4 +9,8 @@ const $ = (tag, all = false) => {
   } else {
     return document.querySelector(tag)
   }
+
 }
+
+
+// TODDO: Crear el evento de click para desplegar el menu, en modo mobil

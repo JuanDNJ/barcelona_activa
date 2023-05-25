@@ -1,0 +1,22 @@
+@import url("./fuentes-tipografia.css");
+/* GENERAL */
+:root{
+  --font-size: 1em;
+  --font-family: "Hiroshio",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-titulos: "cuneiform", system-ui, sans-serif;
+}
+/* PALETA DE COLORES */
+:root{
+  --color-primario: rgb(255, 255, 255);
+  --color-secundario: rgb(0, 0, 0);
+  --color-uno: rgb(169, 169, 169);
+  --color-uno-a: rgb(218, 218, 218);
+  --color-dos: rgb(255, 0, 0);
+  --color-dos-a: rgb(255, 131, 131);
+  --color-tres: rgb(255, 140, 0);
+  --color-tres-a: rgb(255, 196, 124);
+  --color-cuatro: rgb(255, 255, 0);
+  --color-cuatro-a: rgb(255, 255, 118);
+  --color-cinco: rgb(0, 157, 255);
+  --color-cinco-a: rgb(0, 255, 255);
+}
