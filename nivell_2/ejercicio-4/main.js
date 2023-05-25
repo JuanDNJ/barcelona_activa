@@ -12,5 +12,3 @@ const $ = (tag, all = false) => {
 
 }
 
-
-//  Mejorar el aspecto
