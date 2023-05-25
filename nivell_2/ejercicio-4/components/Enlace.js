@@ -16,7 +16,7 @@ export default class EnlaceRollOver extends HTMLElement {
         padding: .5rem .5rem .5rem 0rem;
         font-size: 1em;
         font-weight: 600;
-        color: red
+        color: gray;
       }
 
       a.link:hover,

@@ -23,7 +23,8 @@ export default class BannerPrincipal extends HTMLElement {
       span {
         font-family: var(--font-family-titulos);
         font-size: 1.5rem; 
-        color: rgb(77, 74, 74);
+        color: var(--color-dos-a);
+        text-shadow: 3px 3px 1px rgba(0, 0, 0, .5);
       }
     `
   }
