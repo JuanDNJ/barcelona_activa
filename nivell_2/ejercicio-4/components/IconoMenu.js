@@ -11,17 +11,18 @@ export default class IconoMenu extends HTMLElement {
      :host {
         display: block;
       }
-      i.icono__menu-bar{
+      i.menu-bar{
          display: inline-flex;
          padding: 1rem;
+
       }
      @media screen and (min-width: 425px) {
-         i.icono__menu-bar{
+         i.menu-bar{
             display: inline-flex;
          }
      }
      @media screen and (min-width: 768px) {
-      i.icono__menu-bar{
+      i.menu-bar{
         display: none;
       }
     }
@@ -35,14 +36,26 @@ export default class IconoMenu extends HTMLElement {
 
       this.shadowRoot.innerHTML = /*html*/ `
       <style>${IconoMenu.styles}</style>
-      <i class="icono__menu-bar">
+      <i class="menu-bar">
          <img src="./images/svg/menu_bars.svg" alt="Menu bar">
       </i>
     `;
-
+    const clickOpenMenu = this.shadowRoot.querySelector(".menu-bar");
+    clickOpenMenu.addEventListener("click", this.handleCklickOpenMenu.bind(this));
    }
 
+   handleCklickOpenMenu(event) {
+      console.log(event.target)
 
+      this.dispatchEvent(new CustomEvent("openmenubar", {
+         detail: {
+            active: true
+         },
+         bubbles: true,
+         composed: true
+      }))
+
+   }
    disconnectedCallback() {
       this.shadowRoot.innerHTML = /* html */ "";
    }

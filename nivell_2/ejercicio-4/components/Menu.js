@@ -42,15 +42,31 @@ export default class MenuNjv extends HTMLElement {
 
   connectedCallback() {
     this.render();
+    this.addEventListener('openmenubar', this.handlerMenuBar.bind(this));
   }
-
+  handlerMenuBar(event){
+      console.log(event)
+      const menu = this.shadowRoot.querySelector('.lista');
+      if(event.detail.active){
+        menu.style.position = 'absolute';
+        menu.style.display = 'grid';
+        menu.style.background = 'red';
+        menu.style.left = '0';
+        menu.style.top = '0';
+        menu.zIndex = '10';
+      }else{
+        console.log("No activado")
+      }
+      
+     
+  }
   render() {
 
     this.shadowRoot.innerHTML = /*html*/ `
       <style>${MenuNjv.styles}</style>
       <nav class="menu">
         <icono-menu></icono-menu>
-        <ul class="lista">
+        <ul part="menu" class="lista">
           <item-menu>
             <i class="icono" slot="icono">
               <img class="svg__ico" src="./images/svg/home.svg" alt="Inicio">
