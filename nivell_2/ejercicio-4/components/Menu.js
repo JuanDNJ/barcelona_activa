@@ -37,6 +37,14 @@ export default class MenuNjv extends HTMLElement {
         order: -1;
       }
     }
+    @keyframes animMenu {
+      0%{
+        <!-- hacer algo -->
+      }
+      100%{
+         <!-- hacer algo -->
+      }
+    }
   `;
   }
 

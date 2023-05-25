@@ -21,10 +21,20 @@ export default class LogoEmpresa extends HTMLElement {
         align-items: center;
         overflow: hidden;
         margin: -1rem;
+        animation: moveLogo 300ms linear;
       }
       @media screen and (min-width: 768px) {
         .logo{
           order: -1;
+        }
+      }
+      @keyframes moveLogo{
+        0%{
+          opacity: 0;
+          transform: translateX(-100%) rotate(360deg);
+        }
+        100%{
+          opacity: 1;
         }
       }
     `
