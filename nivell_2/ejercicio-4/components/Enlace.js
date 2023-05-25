@@ -20,27 +20,26 @@ export default class EnlaceRollOver extends HTMLElement {
       }
 
       a.link:hover,
-      a.link:active {
-        animation: roll-over 300ms ease-in-out;
-      }
-
-      a.link:focus {
-        color: green
-      }
-
+      a.link:active,
+      a.link:focus,
       a.link:target {
-        color: blue
+        animation: roll-over 1000ms ease-in-out infinite;
       }
       @keyframes roll-over {
-        to { color: red}
-        from {color: blue}
+        0% { 
+          border-bottom: 2px solid red;
+        }
+        100% {
+          color: darkred;
+          border-bottom: 2px solid gray;
+        }
       }
     `
   }
   ready() {
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${EnlaceRollOver.styles}</style>
-        <a class="link"  href="${this.getAttribute('path') ?? '#'}" title="Pulsar">
+        <a class="link"  href="${this.getAttribute('path') ?? '#'}" title="${this.getAttribute("content")}">
           ${
             this.hasAttribute("content") 
               ? this.getAttribute("content")  

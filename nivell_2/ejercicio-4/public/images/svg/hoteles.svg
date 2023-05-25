@@ -16,7 +16,7 @@
   <sodipodi:namedview
      id="namedview147"
      pagecolor="#ffffff"
-     bordercolor="#000000"
+     bordercolor="gray"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
@@ -45,7 +45,7 @@
        id="linearGradient4108"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         style="stop-color:gray;stop-opacity:1;"
          offset="0"
          id="stop4106" />
     </linearGradient>
@@ -53,7 +53,7 @@
        id="linearGradient4033"
        inkscape:swatch="solid">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         style="stop-color:gray;stop-opacity:1;"
          offset="0"
          id="stop4031" />
     </linearGradient>
@@ -92,7 +92,7 @@
        id="path4146" />
     <circle
        id="path10405"
-       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       style="fill:gray;stroke:gray;stroke-width:0.264583"
        cx="4.1008363"
        cy="5.1784286"
        r="0" />
@@ -100,10 +100,10 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text10651"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0;stroke-dasharray:none;white-space:pre;shape-inside:url(#rect10653)" />
+       style="fill:gray;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0;stroke-dasharray:none;white-space:pre;shape-inside:url(#rect10653)" />
     <text
        xml:space="preserve"
-       style="font-size:12.3606px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:12.3606px;fill:gray;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
        x="-0.96246821"
        y="9.3426409"
        id="text10711"
