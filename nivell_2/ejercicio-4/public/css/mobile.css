@@ -28,7 +28,8 @@ i.icono {
 .cabecera__principal>.item:nth-child(1) {
   display: grid;
   grid-auto-flow: column;
-  justify-content: stretch;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   z-index: 11;
 }

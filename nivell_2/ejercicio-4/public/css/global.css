@@ -19,6 +19,7 @@ body {
 body {
   background: var(--color-primario);
   color: var(--color-secundario);
+  margin: 0;
 }
 h1,
 h2,

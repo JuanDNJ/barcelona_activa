@@ -14,7 +14,7 @@ export default class MenuNjv extends HTMLElement {
       display: block;
      
     }
-    ul.list__menu {
+    ul.lista {
       display: none;
     }
     .menu{
@@ -30,10 +30,8 @@ export default class MenuNjv extends HTMLElement {
     }
     @media screen and (min-width: 768px) {
       ul.lista{
-        display: inline-flex;
-        align-items: center;
+        display: flex;
         justify-content: center;
-        background-color: red;
       }
       .menu{
         order: -1;
