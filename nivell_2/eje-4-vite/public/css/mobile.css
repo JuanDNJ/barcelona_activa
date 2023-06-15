@@ -102,7 +102,9 @@ img.jpg__header {
   display: grid;
   gap: .5rem;
 }
-
+img.imagen-articulo{
+  max-height: 178px;
+}
 .contenido .pie__contenido {
   background: var(--color-cinco-a);
   grid-column: span 2;
