@@ -45,13 +45,16 @@
 
   .contenido {
     display: grid;
-
   }
 
   .contenido>.item {
     background: var(--color-cinco);
   }
-
+  .contenido .articulos{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, 1fr);
+   
+  }
   .contenido .pie__contenido {
     background: var(--color-cinco-a);
     grid-column: span 2;

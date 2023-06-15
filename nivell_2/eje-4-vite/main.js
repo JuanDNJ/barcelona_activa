@@ -9,6 +9,5 @@ const $ = (tag, all = false) => {
   } else {
     return document.querySelector(tag)
   }
-
 }
 
