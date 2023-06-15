@@ -100,7 +100,16 @@ img.jpg__header {
 
 .contenido .articulos {
   display: grid;
-  gap: .5rem;
+  gap: 1rem;
+}
+article.articulo{
+  background: var(--color-primario);
+}
+a.link-mas{
+  color: var(--color-uno);
+}
+h2.titulo-articulo{
+  color: var(--color-dos);
 }
 img.imagen-articulo{
   max-height: 178px;
