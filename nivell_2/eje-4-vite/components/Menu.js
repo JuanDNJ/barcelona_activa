@@ -32,6 +32,7 @@ export default class MenuNjv extends HTMLElement {
       ul.lista{
         display: flex;
         justify-content: center;
+        gap:  2rem;
       }
       .menu{
         order: -1;

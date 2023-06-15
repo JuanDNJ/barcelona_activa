@@ -17,21 +17,23 @@ export default class EnlaceRollOver extends HTMLElement {
         font-size: 1em;
         font-weight: 600;
         color: gray;
+        transition: 300ms ease-in-out;
       }
 
       a.link:hover,
       a.link:active,
       a.link:focus,
       a.link:target {
-        animation: roll-over 1000ms ease-in-out infinite;
+        color: tomato;
+        
       }
       @keyframes roll-over {
         0% { 
-          border-bottom: 2px solid red;
+          border-bottom: 2px solid gray;
         }
         100% {
           color: darkred;
-          border-bottom: 2px solid gray;
+          font-size: 1.1rem;
         }
       }
     `

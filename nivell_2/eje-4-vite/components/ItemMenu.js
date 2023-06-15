@@ -14,7 +14,8 @@ export default class ItemMenu extends HTMLElement {
       li.item{
           display: flex;
           align-items: center;
-          gap: 1rem;
+          justify-content: center;
+          gap: .5rem;
       }
     `
   }
