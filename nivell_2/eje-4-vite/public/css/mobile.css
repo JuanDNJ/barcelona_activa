@@ -55,7 +55,7 @@ i.icono {
 
 div.contenedor-imagen__banner {
   position: absolute;
-  z-index: 10; 
+  z-index: 10;
   overflow: hidden;
 }
 
@@ -85,22 +85,24 @@ img.jpg__header {
   padding: 1rem;
   gap: 1rem;
 }
+
 .contenido {
   display: grid;
   grid-auto-flow: row;
   background: var(--color-uno);
-  gap: 1rem;
-  padding: 1rem;
+  padding: .5rem;
 }
+
 .contenido>.item {
-  background: var(--color-cinco);
+  /* background: var(--color-cinco); */
   grid-column: span 2;
 }
-.contenido .articulos{
+
+.contenido .articulos {
   display: grid;
-  gap: 1rem;
-  padding: 1rem;
+  gap: .5rem;
 }
+
 .contenido .pie__contenido {
   background: var(--color-cinco-a);
   grid-column: span 2;
@@ -137,5 +139,5 @@ img.jpg__header {
     background-size: cover;
     background-repeat: none;
   }
-  
+
 }
