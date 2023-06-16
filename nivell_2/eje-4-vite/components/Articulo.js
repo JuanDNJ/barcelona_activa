@@ -78,4 +78,4 @@ export default class Articulo extends HTMLElement {
   //   return [''];
   // }
 }
-window.customElements.define("articulo-njv",Articulo);
+window.customElements.define("articulo-web",Articulo);

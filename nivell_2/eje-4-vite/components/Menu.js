@@ -1,7 +1,7 @@
 import './IconoMenu.js'
 import './Enlace.js'
 import './ItemMenu.js'
-export default class MenuNjv extends HTMLElement {
+export default class MenuWeb extends HTMLElement {
 
   constructor() {
     super();
@@ -72,7 +72,7 @@ export default class MenuNjv extends HTMLElement {
   render() {
 
     this.shadowRoot.innerHTML = /*html*/ `
-      <style>${MenuNjv.styles}</style>
+      <style>${MenuWeb.styles}</style>
       <nav class="menu">
         <icono-menu></icono-menu>
         <ul class="lista">
@@ -123,4 +123,4 @@ export default class MenuNjv extends HTMLElement {
   // }
 }
 
-window.customElements.define("menu-njv", MenuNjv);
+window.customElements.define("menu-web", MenuWeb);
