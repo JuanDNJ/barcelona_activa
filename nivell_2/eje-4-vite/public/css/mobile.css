@@ -137,13 +137,16 @@ footer.pie__contenido {
 
 /* PIE PRINCIPAL */
 footer.pie__principal {
-  background: var(--color-secundario);
+  background: var(--color-uno-a);
   padding: 1rem;
+  display: flex;
+  place-content: center;
 }
 
 footer.pie__principal > address {
   /* background: var(--color-cuatro-a); */
   color: tomato;
+
 }
 
 @media screen and (max-width: 768px) {

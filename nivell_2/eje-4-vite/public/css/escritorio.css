@@ -27,10 +27,9 @@
     grid-template-columns: 1fr auto;
   }
 
-  footer.pie__contenido {
-    /* background: var(--color-cinco-a); */
-
-  }
+  /* footer.pie__contenido {
+  background: var(--color-cinco-a); 
+  } */
 
   /* PIE PRINCIPAL */
   /* footer.pie__principal {

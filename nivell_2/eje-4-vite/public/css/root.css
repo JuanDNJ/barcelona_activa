@@ -10,7 +10,7 @@
   --color-primario: rgb(255, 255, 255);
   --color-secundario: rgb(0, 0, 0);
   --color-uno: rgb(169, 169, 169);
-  --color-uno-a: rgb(218, 218, 218);
+  --color-uno-a: rgba(218, 218, 218, 0.123);
   --color-dos: rgb(255, 0, 0);
   --color-dos-a: rgb(255, 131, 131);
   --color-tres: rgb(255, 140, 0);
