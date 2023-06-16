@@ -26,9 +26,20 @@
   .contenido {
     grid-template-columns: 1fr auto;
   }
-  
-  .contenido .pie__contenido {
-    background: var(--color-cinco-a);
-   
+
+  footer.pie__contenido {
+    /* background: var(--color-cinco-a); */
+
   }
+
+  /* PIE PRINCIPAL */
+  /* footer.pie__principal {
+    background: var(--color-secundario);
+    padding: 1rem;
+  }
+
+  footer.pie__principal>address {
+    background: var(--color-cuatro-a);
+    color: tomato;
+  } */
 }

@@ -19,6 +19,9 @@ export default class Articulo extends HTMLElement {
       article.articulo{
         background: var(--color-primario);
         padding:  0 0 1rem 0 ;
+        box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+        border-radius: 5px;
+        overflow: hidden;
       }
       a.link-mas{
         color: var(--color-uno);
@@ -32,10 +35,13 @@ export default class Articulo extends HTMLElement {
       }
       p{
         color: var(--color-uno);
-       
+        font-size: .8rem;
       }
       a.link-mas,h2.titulo-articulo, p {
         padding: 0 1rem;
+      }
+      .descripcion{
+        display: flex;
       }
     `
   }

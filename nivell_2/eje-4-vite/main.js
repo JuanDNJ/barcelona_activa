@@ -5,10 +5,14 @@ import './components/BannerPrincipal.js'
 import './components/Articulo.js'
 
 const $ = (tag, all = false) => {
-  if (all === true) {
-    return Array.from(document.querySelectorAll(tag))
-  } else {
-    return document.querySelector(tag)
+  try {
+    if (all === true) {
+      return [...Array.from(document.querySelectorAll(tag))] // Retorna un array de nodos
+    } else {
+      return document.querySelector(tag) // Retorna un nodo
+    }
+  } catch (error) {
+    throw new Error(`Error: ${error.message}`)
   }
 }
 
