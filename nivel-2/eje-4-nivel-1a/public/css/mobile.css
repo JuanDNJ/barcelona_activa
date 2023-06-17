@@ -103,7 +103,29 @@ section.contenido {
 section.contenido>.item {
   grid-column: span 2;
 }
-
+article.articulo{
+  background: var(--color-primario);
+  padding:  0 0 1rem 0 ;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+h2.titulo-articulo{
+  color: var(--color-dos);
+}
+img.imagen-articulo{
+  max-height: 220px;
+}
+p{
+  color: var(--color-uno);
+  font-size: .8rem;
+}
+a.link-mas,h2.titulo-articulo, p {
+  padding: 0 1rem;
+}
+div.descripcion{
+  display: flex;
+}
 footer.pie-contenido {
   grid-column: span 2;
   text-align: center;
@@ -113,6 +135,7 @@ footer.pie-contenido {
 aside.barra-dinamica {
   align-items: start;
   padding: 1rem;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
 }
 
 article.informacion-web {

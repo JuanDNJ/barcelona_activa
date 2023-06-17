@@ -57,7 +57,9 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(200px, 1fr);
   }
-
+  img.imagen-articulo{
+    max-height: 256px;
+  }
   footer.pie-contenido {
     grid-column: span 2;
   }

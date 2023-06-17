@@ -152,29 +152,7 @@ span.descripcion {
   letter-spacing: 1px;
  
 }
-article.articulo{
-  background: var(--color-primario);
-  padding:  0 0 1rem 0 ;
-  box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
-  border-radius: 5px;
-  overflow: hidden;
-}
-h2.titulo-articulo{
-  color: var(--color-dos);
-}
-img.imagen-articulo{
-  max-height: 178px;
-}
-p{
-  color: var(--color-uno);
-  font-size: .8rem;
-}
-a.link-mas,h2.titulo-articulo, p {
-  padding: 0 1rem;
-}
-span.descripcion{
-  display: flex;
-}
+
 
 @media screen and (min-width: 425px) {
   span.descripcion {
