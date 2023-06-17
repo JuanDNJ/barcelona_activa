@@ -73,7 +73,30 @@ a:focus {
 a:target {
   color: blue
 }
+a.link {
+  text-decoration: none;
+  padding: .5rem .5rem .5rem 0rem;
+  font-size: 1em;
+  font-weight: 600;
+  color: red
+}
 
+a.link:hover,
+a.link:active {
+  animation: roll-over 300ms ease-in-out;
+}
+
+a.link:focus {
+  color: green
+}
+
+a.link:target {
+  color: blue
+}
+@keyframes roll-over {
+  to { color: red}
+  from {color: blue}
+}
 img {
   width: 100%;
   object-fit: cover;

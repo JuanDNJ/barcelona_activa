@@ -18,8 +18,8 @@
 
   /* CONTENIDO PRINCIPAL */
   .contenido__principal {
-    grid-template-columns: 1fr auto;
-    padding: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr .5fr;
     gap: 1rem;
   }
 
