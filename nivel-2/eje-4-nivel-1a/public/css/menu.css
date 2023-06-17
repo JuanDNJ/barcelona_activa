@@ -1,50 +1,56 @@
-.menu{
+nav.menu {
   order: 2;
 }
+
 ul.lista {
   display: none;
 }
-li.item{
+
+li.item {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .5rem;
 }
-i.menu-bar{
+
+i.menu-bar {
   display: inline-flex;
   padding: 1rem;
   cursor: pointer;
 }
+
 article.red-social {
   order: 2;
 }
+
 @media screen and (min-width: 425px) {
-  ul.lista{
+  ul.lista {
     display: none;
   }
-  i.menu-bar{
+
+  i.menu-bar {
     display: inline-flex;
- }
-}
-@media screen and (min-width: 768px) {
-  ul.lista{
-    display: flex;
-    justify-content: center;
-    gap:  2rem;
-  }
-  .menu{
-    order: -1;
-  }
-  i.menu-bar{
-    display: none;
-  }
-}
-@keyframes animMenu {
-  0%{
-    
-  }
-  100%{
-   
   }
 }
 
+@media screen and (min-width: 768px) {
+  ul.lista {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav.menu {
+    order: -1;
+  }
+
+  i.menu-bar {
+    display: none;
+  }
+}
+
+@keyframes animMenu {
+  0% {}
+
+  100% {}
+}

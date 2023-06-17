@@ -40,7 +40,6 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  background-color: var(--color-cuatro);
   flex: 1;
 }
 p{
@@ -112,7 +111,7 @@ span{
   padding: .25rem;
 }
 /* APP */
-#app {
+main#app {
   display: grid;
   grid-auto-flow: row;
   max-width: 1200px;
@@ -173,10 +172,9 @@ p{
 a.link-mas,h2.titulo-articulo, p {
   padding: 0 1rem;
 }
-.descripcion{
+span.descripcion{
   display: flex;
 }
-
 
 @media screen and (min-width: 425px) {
   span.descripcion {
