@@ -19,7 +19,7 @@
   section.contenido-principal {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 1rem;
+   
     gap: 1rem;
     
   }

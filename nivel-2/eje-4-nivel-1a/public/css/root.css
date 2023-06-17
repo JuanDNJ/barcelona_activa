@@ -19,4 +19,5 @@
   --color-cuatro-a: rgb(255, 255, 118);
   --color-cinco: rgb(0, 157, 255);
   --color-cinco-a: rgb(0, 255, 255);
+  --color-link-mas: var(--color-cinco-a);
 }

@@ -42,10 +42,6 @@
 
   /* CONTENIDO PRINCIPAL */
   section.contenido-principal {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr;
-    padding: 1rem;
     gap: 1rem;
   }
 

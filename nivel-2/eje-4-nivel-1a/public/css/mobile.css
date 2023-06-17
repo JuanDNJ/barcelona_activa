@@ -91,7 +91,7 @@ span.descripcion {
 section.contenido-principal {
   display: grid;
   grid-auto-flow: row;
-  padding: 1rem;
+  padding: 1rem ;
   gap: 1rem;
 }
 
@@ -109,6 +109,9 @@ article.articulo{
   box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
   border-radius: 5px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 h2.titulo-articulo{
   color: var(--color-dos);

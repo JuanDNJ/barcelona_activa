@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +19,6 @@ body {
   font-family: var(--font-family);
 }
 body {
-  background: var(--color-primario);
   color: var(--color-secundario);
 }
 h1,
@@ -89,8 +90,8 @@ a.link:target {
   
 }
 a.link-mas{
-  color: var(--color-uno);
-  margin: 1rem 0;
+  color: var(--color-link-mas);
+  padding: 1rem 0;
 }
 @keyframes roll-over {
   0% { 
@@ -116,9 +117,9 @@ main#app {
   grid-auto-flow: row;
   max-width: 1200px;
   margin: 0 auto;
-  overflow-x: hidden;
   color: snow;
   position: relative;
+
 }
 
 .item {
