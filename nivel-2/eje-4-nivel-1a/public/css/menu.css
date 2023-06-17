@@ -1,36 +1,50 @@
-ul.list__menu {
-  display: none;
-}
 .menu{
   order: 2;
+}
+ul.lista {
+  display: none;
 }
 li.item{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: .5rem;
 }
-i.icono__menu-bar{
+i.menu-bar{
   display: inline-flex;
   padding: 1rem;
+  cursor: pointer;
 }
 article.red-social {
-  order: 1;
+  order: 2;
 }
 @media screen and (min-width: 425px) {
   ul.lista{
     display: none;
   }
+  i.menu-bar{
+    display: inline-flex;
+ }
 }
 @media screen and (min-width: 768px) {
   ul.lista{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    gap:  2rem;
   }
   .menu{
     order: -1;
   }
-  i.icono__menu-bar{
+  i.menu-bar{
     display: none;
   }
 }
-
+@keyframes animMenu {
+  0%{
+    
+  }
+  100%{
+   
+  }
+}
 

@@ -44,7 +44,8 @@ img.png__logo {
   max-width: 64px;
   max-width: 64px;
 }
-.logo{
+
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,9 +70,10 @@ img.png__logo {
   align-items: end;
   order: 1;
 }
+
 div.contenedor-imagen__banner {
   position: absolute;
-  z-index: 10; 
+  z-index: 10;
   overflow: hidden;
 }
 
@@ -101,21 +103,17 @@ img.jpg__header {
   padding: 1rem;
   gap: 1rem;
 }
+
 .contenido {
   display: grid;
   grid-auto-flow: row;
-  grid-auto-rows: 1fr;
-  background: var(--color-uno);
-  gap: 1rem;
-  padding: 1rem;
 }
+
 .contenido>.item {
-  background: var(--color-cinco);
   grid-column: span 2;
 }
 
 .contenido .pie__contenido {
-  background: var(--color-cinco-a);
   grid-column: span 2;
 }
 
@@ -123,7 +121,6 @@ img.jpg__header {
 .barra__dinamica {
   background: var(--color-dos-a);
   align-items: start;
-
   padding: 1rem;
 }
 
@@ -150,5 +147,5 @@ img.jpg__header {
     background-size: cover;
     background-repeat: none;
   }
-  
+
 }

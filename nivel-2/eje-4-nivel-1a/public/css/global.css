@@ -78,26 +78,31 @@ a.link {
   padding: .5rem .5rem .5rem 0rem;
   font-size: 1em;
   font-weight: 600;
-  color: red
+  color: gray;
+  transition: 300ms ease-in-out;
 }
 
 a.link:hover,
-a.link:active {
-  animation: roll-over 300ms ease-in-out;
-}
-
-a.link:focus {
-  color: green
-}
-
+a.link:active,
+a.link:focus,
 a.link:target {
-  color: blue
+  color: tomato;
+  
+}
+a.link-mas{
+  color: var(--color-uno);
+  margin: 1rem 0;
 }
 @keyframes roll-over {
-  to { color: red}
-  from {color: blue}
+  0% { 
+    border-bottom: 2px solid gray;
+  }
+  100% {
+    color: darkred;
+    font-size: 1.1rem;
+  }
 }
-img {
+img{
   width: 100%;
   object-fit: cover;
 }
@@ -121,4 +126,61 @@ span{
   display: flex;
 
 }
+section.articulos {
+  display: grid;
+  gap: 1rem;
+}
+article.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: -1rem;
+  height: 250px;
+  align-items: end;
+  order: 1;
+  position: relative;
+  padding: 1rem;
+}
+span.descripcion {
+  position: absolute;
+  top: 60%;
+  font-family: var(--font-family-titulos);
+  font-size: 1.5rem; 
+  color: var(--color-dos-a);
+  text-shadow: 0px 0px 2.5px rgba(0, 0, 0, 1);
+  text-align: center;
+  letter-spacing: 1px;
+ 
+}
+article.articulo{
+  background: var(--color-primario);
+  padding:  0 0 1rem 0 ;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+h2.titulo-articulo{
+  color: var(--color-dos);
+}
+img.imagen-articulo{
+  max-height: 178px;
+}
+p{
+  color: var(--color-uno);
+  font-size: .8rem;
+}
+a.link-mas,h2.titulo-articulo, p {
+  padding: 0 1rem;
+}
+.descripcion{
+  display: flex;
+}
 
+
+@media screen and (min-width: 425px) {
+  span.descripcion {
+    font-size: 1.5rem; 
+    letter-spacing: 1.2px;
+  }
+}

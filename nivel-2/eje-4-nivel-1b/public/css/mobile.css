@@ -62,24 +62,10 @@ img.jpg__header {
   z-index: 0;
 }
 
-/* BAnner */
-.banner {
-  color: #333;
-  position: relative;
-  bottom: 25px;
-}
-
-.descripcion__banner {
-  font-size: 1.1em;
-  padding: 0 1rem 1rem 1rem;
-  padding-bottom: 0 1rem;
-}
-
 /* CONTENIDO PRINCIPAL */
 .contenido__principal {
   display: grid;
   grid-auto-flow: row;
-
   padding: 1rem;
   gap: 1rem;
 }
@@ -87,11 +73,9 @@ img.jpg__header {
 .contenido {
   display: grid;
   grid-auto-flow: row;
-  
 }
 
 .contenido>.item {
-  /* background: var(--color-cinco); */
   grid-column: span 2;
 }
 

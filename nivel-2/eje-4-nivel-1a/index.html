@@ -11,19 +11,22 @@
   <link rel="stylesheet" href="./public/css/escritorio.css">
   <link rel="stylesheet" href="./public/css/menu.css">
   <script defer type="module" src="./index.js"></script>
-  <title>Ejercicio 4 -> N2</title>
-
+  <title>Turismo en Japon</title>
 </head>
 
 <body id="body">
+  <!-- MAIN APP -->
   <main id="app">
+    <!-- CABECERA PRINCIPAL -->
     <header class="cabecera__principal">
       <section class="item">
+        <!-- LOGO -->
         <article class="logo">
           <img class="png__logo" src="./public/images/jpg/logo.png" alt="Logo Empresa">
-        </article>
+        </article> <!-- FIN LOGO -->
+        <!-- MENU -->
         <nav class="menu">
-          <i class="icono__menu-bar">
+          <i class="menu-bar">
             <img src="./public/images/svg/menu_bars.svg" alt="Menu bar">
           </i>
           <ul class="lista">
@@ -31,35 +34,36 @@
               <i class="icono" slot="icono">
                 <img class="svg__ico" src="./public/images/svg/home.svg" alt="Inicio">
               </i>
-              <a class="link"  href="#" title="Pulsar">Inicio</a>
+              <a class="link" href="#" title="Pulsar">Inicio</a>
             </li>
-           
+
             <li class="item">
               <i class="icono" slot="icono">
                 <img class="svg__ico" src="./public/images/svg/rutas.svg" alt="Rutas">
               </i>
-              <a class="link"  href="#" title="Pulsar">Rutas</a>
+              <a class="link" href="#" title="Pulsar">Rutas</a>
             </li>
             <li class="item">
-               <i class="icono" slot="icono">
+              <i class="icono" slot="icono">
                 <img class="svg__ico" src="./public/images/svg/hoteles.svg" alt="Hoteles">
               </i>
-              <a class="link"  href="#" title="Pulsar">Hoteles</a>
+              <a class="link" href="#" title="Pulsar">Hoteles</a>
             </li>
             <li class="item">
               <i class="icono" slot="icono">
                 <img class="svg__ico" src="./public/images/svg/vuelos.svg" alt="Vuelos">
               </i>
-              <a class="link"  href="#" title="Pulsar">Vuelos</a>
+              <a class="link" href="#" title="Pulsar">Vuelos</a>
             </li>
             <li class="item">
               <i class="icono" slot="icono">
                 <img class="svg__ico" src="./public/images/svg/contacto.svg" alt="Contacto">
               </i>
-              <a class="link"  href="#" title="Pulsar">Contacto</a>
+              <a class="link" href="#" title="Pulsar">Contacto</a>
             </li>
           </ul>
-        </nav>
+        </nav> <!-- FIN MENU -->
+        <!-- RED SOCIAL -->
         <article class="red-social">
           <i class="icono icono__home">
             <img class="svg__ico" src="./public/images/svg/facebook.svg" alt="Facebook">
@@ -67,45 +71,135 @@
           <i class="icono icono__home">
             <img class="svg__ico" src="./public/images/svg/twitter.svg" alt="Twitter">
           </i>
-        </article>
+        </article> <!-- FIN RED SOCIAL -->
       </section>
       <section class="item">
+        <!-- BANNER -->
         <article class="banner">
-         <span class="descripcion__banner" style="font-family: var(--font-family-titulos);font-size: 1.5rem; color: rgb(77, 74, 74);">"Disfruta de la experiencia de otros viajeros"</span>
-        </article>
+          <span class="descripcion">
+            "Disfruta de la experiencia de otros viajeros"
+          </span>
+        </article> <!-- FIN BANNER -->
       </section>
-    </header>
+    </header> <!-- FIN CABECERA PRINCIPAL -->
+    <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido__principal">
+      <!-- CONTENIDO -->
       <section class="contenido">
-        <article class="item">
-          <span>Artículo 1</span>
-        </article>
-        <article class="item">
-          <span>Artículo 2</span>
-        </article>
-        <article class="item">
-          <span>Artículo 3</span>
-        </article>
-        <article class="item">
-          <span>Artículo 4</span>
-        </article>
+        <!-- ARTICULOS -->
+        <section class="item articulos">
+          <article class="articulo">
+            <img class="imagen-articulo" src="./public/images/jpg/sakura.jpg" alt="Imagen artículo">
+            <h2 class="titulo-articulo">Cultura</h2>
+            <div class="descripcion">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+            </div>
+            <a class="link-mas" href="#">Leer más...</a>
+          </article>
+          <article class="articulo">
+            <img class="imagen-articulo" src="./public/images/jpg/comida.jpg" alt="Imagen artículo">
+            <h2 class="titulo-articulo">GASTRONOMÍA</h2>
+            <div class="descripcion">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+            </div>
+            <a class="link-mas" href="#">Leer más...</a>
+          </article>
+          <article class="articulo">
+            <img class="imagen-articulo" src="./public/images/jpg/fuji.jpg" alt="Imagen artículo">
+            <h2 class="titulo-articulo">TURISMO</h2>
+            <div class="descripcion">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+            </div>
+            <a class="link-mas" href="#">Leer más...</a>
+          </article>
+          <article class="articulo">
+            <img class="imagen-articulo" src="./public/images/jpg/noche.jpg" alt="Imagen artículo">
+            <h2 class="titulo-articulo">VIDA NOCTURNA</h2>
+            <div class="descripcion">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto nulla velit hic laborum optio accusantium id quidem
+                cumque? Modi dolorem inventore quis quia facere eveniet
+                debitis ad, suscipit perspiciatis odit ea ipsa nisi officia
+                qui vero adipisci, ab nam eos maiores amet praesentium
+                tempora? Vel iusto temporibus rerum quia saepe?
+              </p>
+            </div>
+            <a class="link-mas" href="#">Leer más...</a>
+          </article>
+        </section> <!-- FIN ARTICULOS -->
+        <!-- FOOTER ARTICULOS -->
         <footer class="item pie__contenido">
           <span>Pie contenido</span>
-        </footer>
-      </section>
+        </footer><!-- FIN FOOTER ARTICULOS -->
+      </section> <!--  FIN CONTENIDO -->
       <aside class="item barra__dinamica">
         <article class="item informacion__web">
           <h3>Lorem.</h3>
           <p>Lorem, ipsum dolor.</p>
         </article>
       </aside>
-    </section>
+    </section> <!-- FIN CONTENIDO PRINCIPAL -->
+    <!-- FOOTER PRINCIPAL -->
     <footer class="pie__principal">
       <address class="item">
         <span>Dirección Web</span>
       </address>
-    </footer>
-  </main>
+    </footer> <!-- FIN FOOTER PRINCIPAL -->
+  </main> <!-- FIN MAIN APP -->
 </body>
 
 </html>
