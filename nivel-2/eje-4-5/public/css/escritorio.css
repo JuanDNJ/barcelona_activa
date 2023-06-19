@@ -1,5 +1,4 @@
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 1024px)  {
   /* CABECERA PRINCIPAL */
   header.cabecera-principal {
     background: url('../images/jpg/header.jpg');
@@ -19,7 +18,6 @@
   section.contenido-principal {
     display: grid;
     grid-template-columns: 1fr auto;
-   
     gap: 1rem;
     
   }
