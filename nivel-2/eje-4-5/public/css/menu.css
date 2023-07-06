@@ -11,6 +11,7 @@ li.item {
   align-items: center;
   justify-content: center;
   gap: .5rem;
+  transition: 300ms ease-in-out; 
 }
 
 i.menu-bar {
@@ -22,7 +23,16 @@ i.menu-bar {
 article.red-social {
   order: 2;
 }
-
+/* ANIMACIONES */
+i.icono{
+  transition: transform 300ms ease-in-out;
+}
+li.item:hover i.icono{
+  transform: rotate(360deg) scale(1.2);
+}
+li.item:hover a.link{
+  transform:  scale(.95);
+}
 @media screen and (min-width: 425px) {
   ul.lista {
     display: none;
