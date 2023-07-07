@@ -9,7 +9,7 @@ export default class MenuWeb extends HTMLElement {
   }
 
   static get styles() {
-    return /*html*/ `
+    return /*css*/ `
     :host {
       display: block;
      

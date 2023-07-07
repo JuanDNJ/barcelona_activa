@@ -7,9 +7,28 @@ export default class EnlaceRollOver extends HTMLElement {
     this.ready()
   }
   static get styles() {
-    return /*html*/ `
+    return /*css*/ `
       :host{
         display: inline-block;
+      }
+      a {
+        text-decoration: none;
+        padding: .5rem 1rem;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      
+      a:hover,
+      a:active {
+        color: red
+      }
+      
+      a:focus {
+        color: green
+      }
+      
+      a:target {
+        color: blue
       }
       a.link {
         text-decoration: none;
@@ -19,14 +38,15 @@ export default class EnlaceRollOver extends HTMLElement {
         color: gray;
         transition: 300ms ease-in-out;
       }
-
+      
       a.link:hover,
       a.link:active,
       a.link:focus,
       a.link:target {
         color: tomato;
-        
+        transform: scale(1.1);
       }
+      
       @keyframes roll-over {
         0% { 
           border-bottom: 2px solid gray;
@@ -36,6 +56,7 @@ export default class EnlaceRollOver extends HTMLElement {
           font-size: 1.1rem;
         }
       }
+     
     `
   }
   ready() {

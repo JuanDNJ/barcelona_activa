@@ -7,17 +7,29 @@ export default class ItemMenu extends HTMLElement {
     this.ready()
   }
   static get styles() {
-    return /*html*/ `
+    return /*css*/ `
       :host{
         display: block;
+     
       }
       li.item{
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: .5rem;
+          gap: .5rem; 
+          transform: scale(.9);
+          transition: transform 300ms ease-in-out;
       }
-    `
+      li.item:hover{
+        --color-primario: yellow;
+        transform: scale(1.1);
+       
+      }
+      li.item:active{
+        background: var(--color-primario);
+        --font-size: 10rem;
+      }
+    ` 
   }
   ready() {
     this.shadowRoot.innerHTML = /*html*/ `

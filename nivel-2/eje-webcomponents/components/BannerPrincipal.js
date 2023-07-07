@@ -7,7 +7,7 @@ export default class BannerPrincipal extends HTMLElement {
     this.ready()
   }
   static get styles() {
-    return /*html*/ `
+    return /*css*/ `
       :host{
         display: block;
       }
@@ -27,7 +27,7 @@ export default class BannerPrincipal extends HTMLElement {
         position: absolute;
         top: 60%;
         font-family: var(--font-family-titulos);
-        font-size: 1.5rem; 
+        font-size: 5vmin; 
         color: var(--color-dos-a);
         text-shadow: 0px 0px 2.5px rgba(0, 0, 0, 1);
         text-align: center;
@@ -36,7 +36,7 @@ export default class BannerPrincipal extends HTMLElement {
       }
       @media screen and (min-width: 425px) {
         span.descripcion {
-          font-size: 1.5rem; 
+         
           letter-spacing: 1.2px;
         }
       }
