@@ -1,3 +1,4 @@
+import redSocial from '../api/red-social.json';
 export default class RedSocial  extends HTMLElement {
   constructor() {
     super()
@@ -14,7 +15,7 @@ export default class RedSocial  extends HTMLElement {
       .svg__ico{
         cursor: pointer;
         transition: transform 300ms ease-in-out;
-        margin: 0 .25rem;
+        margin-left: .25rem;
       }
       .svg__ico:hover, .svg__ico:active{
         cursor: pointer;
@@ -22,29 +23,13 @@ export default class RedSocial  extends HTMLElement {
       }
     `
   }
-  static get data() {
-    return [
-    {
-      name: 'facebook',
-      url: 'https://www.facebook.com/',
-      svg: './images/svg/facebook.svg',
-      alt: 'Facebook'
 
-    },
-    {
-      name: 'twitter',
-      url: 'https://www.twitter.com/',
-      svg: './images/svg/twitter.svg',
-      alt: 'Twitter'
-    }
-    ]
-  }
   ready() {
-    const redSocial = RedSocial.data;
+    const socialNetwork = redSocial.data;
     this.shadowRoot.innerHTML = /*html*/ `
         <style>${RedSocial.styles}</style>
         <article class="red-social">
-          ${redSocial.map((item)=>{
+          ${socialNetwork.map((item)=>{
             return /*html*/`	
             <i class="icono icono__home">
               <img class="svg__ico" src=${item.svg} alt=${item.alt}>
