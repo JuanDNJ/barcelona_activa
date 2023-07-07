@@ -12,12 +12,13 @@ export default class BannerPrincipal extends HTMLElement {
         display: block;
       }
       article.banner {
+        --height-banner: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         margin: -1rem;
-        height: 250px;
+        height: var(--height-banner);
         align-items: end;
         order: 1;
         position: relative;
@@ -36,7 +37,6 @@ export default class BannerPrincipal extends HTMLElement {
       }
       @media screen and (min-width: 425px) {
         span.descripcion {
-         
           letter-spacing: 1.2px;
         }
       }
@@ -46,6 +46,7 @@ export default class BannerPrincipal extends HTMLElement {
           letter-spacing: 2px; 
         }
       }
+     
     `
   }
   ready() {
